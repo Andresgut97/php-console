@@ -14,17 +14,41 @@
         </nav>
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-                <h1 class="display-4">Consola de PHP</h1>
-                <p class="lead">Esto es una consola </p>
+                 <h1 class="display-4">Consola de PHP</h1>
+                 <p class="lead">Esto es una consola </p>
             </div>  
         </div>
         <div class="container">
             <div class="row">
-                <div class="p-3 m-1 bg-dark text-white">
-                     <?php
-                      echo "Hola <br> Hola como estas";
-                      /*Comentarios*/
-                      ?>
+                <div class="col-12">
+                    <div class="p-3 m-1 bg-dark text-white">
+                        <h2>Clase: Operadores</h2>
+                            <?php
+                                $num1= 2;
+                                $num2=50;
+                                $resultado= $num1 + $num2;
+                                echo "El resultado es: " . $resultado;
+                            ?>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                   <div class="col-12">
+                    <div class="p-3 m-1 bg-danger text-white">
+                        <h2>Variable y tipos de datos </h2>
+                            <?php
+                                //string
+                                $name = "Max";
+                                //boolean
+                                $isold = true;
+                                //integer
+                                $year =1990;
+                                //Float
+                                $mts=   54.4;
+                                echo "Hola ". $name. " naciste en el espacio ". $year . " y estas a KM.: ". $mts;
+                                echo "<br> La variable Name es de tipo: ". gettype($name);
+                            ?>
+                    </div>
                 </div>
             </div>
         </div>
