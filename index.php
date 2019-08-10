@@ -16,14 +16,16 @@
             <div class="container">
                 <h1 class="display-4">Consola de PHP</h1>
                 <p class="lead">Esto es una consola </p>
-            </div>
+            </div>  
         </div>
         <div class="container">
             <div class="row">
-                <div class="p-3 m-1 bg-dark text-white">Hola</div>
-                    <?php 
-                        echo "hola";
-                    ?>
+                <div class="p-3 m-1 bg-dark text-white">
+                     <?php
+                      echo "Hola <br> Hola como estas";
+                      /*Comentarios*/
+                      ?>
+                </div>
             </div>
         </div>
 
