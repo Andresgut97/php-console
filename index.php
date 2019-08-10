@@ -21,6 +21,25 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
+                    <div class="p-3 m-1 bg-primary text-white">
+                        <h2>Clase: Condicional - IF</h2>
+                            <?php
+                            $name= "Ariany";
+                            if($name == "Ariany")
+                            {
+                                echo "Ariany tiene olor a culito y su sapito tambien";
+                            }
+                            else{
+                                echo "Y su culito apesta";
+                            }
+                            ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
                     <div class="p-3 m-1 bg-dark text-white">
                         <h2>Clase: Operadores</h2>
                             <?php
