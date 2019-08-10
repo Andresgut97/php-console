@@ -20,7 +20,10 @@
         </div>
         <div class="container">
             <div class="row">
-                
+                <div class="p-3 m-1 bg-dark text-white">Hola</div>
+                    <?php 
+                        echo "hola";
+                    ?>
             </div>
         </div>
 
