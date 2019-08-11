@@ -24,13 +24,18 @@
                     <div class="p-3 m-1 bg-primary text-white">
                         <h2>Clase: Condicional - IF</h2>
                             <?php
-                            $name= "Ariany";
+                            $name= "Arian";
                             if($name == "Ariany")
                             {
                                 echo "Ariany tiene olor a culito y su sapito tambien";
                             }
-                            else{
+                            else if ($name == "Ariane")
+                            {   
                                 echo "Y su culito apesta";
+                            }
+                            else
+                            {
+                                echo "no puede ser el indicado";
                             }
                             ?>
                     </div>
@@ -53,7 +58,7 @@
             </div>
             <div class="row">
                    <div class="col-12">
-                    <div class="p-3 m-1 bg-danger text-white">
+                     <div class="p-3 m-1 bg-danger text-white">
                         <h2>Variable y tipos de datos </h2>
                             <?php
                                 //string
