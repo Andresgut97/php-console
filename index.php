@@ -20,6 +20,33 @@
         </div>
         <div class="container">
             <div class="row">
+                <div class="col-6">
+                    <div class="p-3 m-1 bg-danger text-while">
+                        <h2>Clase: Array</h2>
+                        <?php
+                            $num= array(1,2,4,5);
+                            for($i=0; $i < count($num);$i++){
+                                echo $num[$i] . "<br>";
+                            }
+                        ?>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 m-1 bg-warning text-while">
+                        <h2>Clase: foreach</h2>
+                        <?php
+                            $num = array("Max", "Tom", "Jhon", "Sarah");
+
+                            foreach($num as $num){
+                                echo $num . "<br>";
+                            }   
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
                 <div class="col-8">
                     <div class="p-3 m-1 bg-primary text-white">
                         <h2>Clase: Bucle While</h2>
