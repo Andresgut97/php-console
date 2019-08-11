@@ -21,6 +21,47 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
+                    <div class="p-3 m-1 bg-warning text-white">
+                        <h2>Clase Condicional-Swicht</h2>
+                        <?php
+                            $num=10;
+                            /*if  ($num==1){
+                                echo "L acalificaion es muy baja";
+                            }
+                            else if ($num==2 || $num== 4)
+                            {
+                                echo "La calificaion es mediocre";
+                            }*/
+                            switch($num)
+                            {
+                                case 1:
+                                    echo "la calificación es baja";
+                                    break;
+                                case 2:
+                                case 4: 
+                                    echo "La calificación sigue siendo baja";
+                                    break;
+                                case 6:
+                                    echo "Es una clasificacion mediocre";
+                                    break;
+                                case 8: 
+                                    echo "La calificación es buena";
+                                    break;
+                                case 10:
+                                    echo "La calificación es excelente";
+                                    break;
+                                default: 
+                                    echo "La calificacion no es válida";
+                            }
+                            
+                        ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
                     <div class="p-3 m-1 bg-primary text-white">
                         <h2>Clase: Condicional - IF</h2>
                             <?php
