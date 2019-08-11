@@ -20,6 +20,33 @@
         </div>
         <div class="container">
             <div class="row">
+                <div class="col-8">
+                    <div class="p-3 m-1 bg-primary text-white">
+                        <h2>Clase: Bucle While</h2>
+                        <?php
+                            $num=1;
+                            while ($num < 5){
+                                $num ++;
+                                echo "El numero es: " . $num . "<br>";
+                            }
+                        ?>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="p-3 m-1 bg-dark text-white">
+                        <h2>Clase: Bucle For</h2>
+                        <?php
+                            $num= 12;
+                            for ($i = 1; $i < 5; $i++){
+                                echo $i. "<br>";
+                            }
+                        ?>
+                    </div>
+                </div>  
+            </div>    
+        </div>
+        <div class="container">
+            <div class="row">
                 <div class="col-12">
                     <div class="p-3 m-1 bg-warning text-white">
                         <h2>Clase Condicional-Swicht</h2>
