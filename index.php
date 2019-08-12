@@ -18,7 +18,36 @@
             </div>  
         </div>
         <div class="container">
-        <div class="row">
+            <div class="row">
+                <div class="col-6">
+                    <div class="p-3 m-1 bg-dark text-white">
+                        <h2>Formularios</h2>
+                        <form class="form-inline" method="post" action="#">
+                            <div class="form-group mx-sm-3 mb-2">
+                                <label for="saludo" class="sr-only">Saludo</label>
+                                <input type="text" class="form-control" id="saludo" name="saludo" placeholder="Di algo">
+                            </div>
+                            <button type="submit" class="btn btn-primary mb-2">Confirmar</button>
+                            </form> 
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 m-1 bg-dark text-white">
+                        <h2>Formularios</h2>
+                        <?php
+                        if(isset($_POST['saludo']))
+                        {
+                            echo $_POST['saludo'];
+                        }
+                        else 
+                        {
+                            echo "Esperando saludo";
+                        }
+                        ?>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-12">
                     <div class="p-3 m-1 bg-secondary text-white">
                         <h2>Clase:Metodos Estatico</h2>
