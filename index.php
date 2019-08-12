@@ -20,6 +20,44 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
+                    <div class="p-3 m-1 bg-warning text-white">
+                        <h2>Clase:PPO</h2>
+                            <?php
+                                class mascota{
+                                    public $nombre;
+                                    public $tipo;
+                                    public $patas;
+                                    function __construct($nombre, $tipo , $patas){
+                                        $this ->nombre = $nombre;
+                                        $this ->tipo= $tipo;
+                                        $this ->patas = $patas;
+                                       
+                                    }
+                                    public function getDesc(){
+                                        if($this->patas== 0 ){
+                                            return "Tu mascota es un " . $this->tipo . " se llama " . $this->nombre . " y no tiene patas";
+                                        }
+                                        else{
+                                            return "Tu mascota es un " . $this->tipo . " se llama " . $this->nombre . " y tiene " . $this->patas . " patas ";
+                                        }
+                                       
+                                    }
+                                }
+                                $perro= new mascota("Tommy", "perro" ,4);
+                                $gato= new mascota("Sarah", "gato" , 4);
+                                $pez= new mascota("Flipy", "pez" , 0);
+                                echo $perro->getDesc(). "<br>";
+                                echo $gato->getDesc(). "<br>";
+                                echo $pez->getDesc();
+                                
+                            ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
                     <div class="p-3 m-1 bg-info text-white">
                         <h2>Clase: Funciones</h2>
                             <?php
