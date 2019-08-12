@@ -19,6 +19,35 @@
         </div>
         <div class="container">
             <div class="row">
+                <div class="col-12">
+                    <div class="p-3 m-1 bg-info text-white">
+                        <h2>Clase: Funciones</h2>
+                            <?php
+                                function calc($signo, $num1, $num2){
+                                    switch($signo){
+                                        case "+":
+                                            return $num1 + $num2;
+                                            break;
+                                        case "-":
+                                            return $num1 - $num2;
+                                            break;
+                                        case "*":
+                                            return $num1 * $num2;
+                                            break;
+                                        case "/":
+                                            return $num1 / $num2;
+                                            break;
+                                    }
+                                }
+                                $resultado= calc("*",3,3);
+                                echo "el resultado es: " . $resultado;
+                            ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
                 <div class="col-6">
                     <div class="p-3 m-1 bg-success text-white">
                         <h2>Clase: Break</h2>
