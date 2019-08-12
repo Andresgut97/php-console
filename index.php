@@ -18,6 +18,29 @@
             </div>  
         </div>
         <div class="container">
+        <div class="row">
+                <div class="col-12">
+                    <div class="p-3 m-1 bg-secondary text-white">
+                        <h2>Clase:Metodos Estatico</h2>
+                            <?php
+                            class calculadora
+                            {
+                                public static function sumar($num1, $num2){
+                                    return $num1 + $num2;
+                                }
+                                public static function restar($num1, $num2){
+                                    return $num1 - $num2;
+                                }
+
+                            }
+                            echo "El resultado de la suma es " . calculadora::sumar(1,1);
+                            /*
+                            $calcular =new calculadora();
+                            echo "El resultado de la suma es " . $calcular->sumar(1,1);*/
+                            ?>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-12">
                     <div class="p-3 m-1 bg-warning text-white">
