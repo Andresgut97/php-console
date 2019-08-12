@@ -18,6 +18,38 @@
             </div>  
         </div>
         <div class="container">
+        <div class="row">
+                <div class="col-6">
+                    <div class="p-3 m-1 bg-danger text-white">
+                        <h2>Calculadora Form</h2>
+                        <form class="form-inline" method="post" action="#">
+                            <div class="form-group mx-sm-1 mb-2">
+                                <input type="number" class="form-control" id="num1" name="num1">
+                            </div>
+                            <div class="form-group mx-sm-1 mb-2">
+                                <input type="number" class="form-control" id="num2" name="num2">
+                            </div>
+                            <button type="submit" class="btn btn-primary mb-1">Sumar</button>
+                            </form> 
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 m-1 bg-dark text-white">
+                        <h2>Formularios</h2>
+                        <?php
+                        if(isset($_POST['num1'])&& isset($_POST['num2']))
+                        {
+                            $result= $_POST['num1']+$_POST['num2'];
+                            echo "El resultado es " . $result;
+                        }
+                        else 
+                        {
+                            echo "Esperando calculo...";
+                        }
+                        ?>
+                    </div>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-6">
                     <div class="p-3 m-1 bg-dark text-white">
