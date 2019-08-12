@@ -23,7 +23,7 @@
                     <div class="p-3 m-1 bg-warning text-white">
                         <h2>Clase:PPO</h2>
                             <?php
-                                class mascota{
+                                /*class mascota{
                                     public $nombre;
                                     public $tipo;
                                     public $patas;
@@ -49,7 +49,39 @@
                                 echo $perro->getDesc(). "<br>";
                                 echo $gato->getDesc(). "<br>";
                                 echo $pez->getDesc();
-                                
+                                */
+                            ?>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="p-3 m-1 bg-info text-white">
+                        <h2>Clase:Herencia</h2>
+                            <?php
+                                class mascota{
+                                    function __construct($nombre, $patas){
+                                        $this->nombre=$nombre;
+                                        $this->patas=$patas;
+                                    }
+                                    function eat(){
+                                        return "Estoy comiendo";
+                                    }
+                                }
+                                class perro extends mascota{
+                                    function run(){
+                                        return "Estoy corriendo";   
+                                    }
+                                }
+                                class gato extends mascota{
+                                    function mauyar(){
+                                        return "Estoy mauyando";
+                                    }
+                                }
+                                $tomy = new perro("Tomy",4);
+                                $rocky= new gato("Rocky",4);
+                                echo $tomy-> eat(). "<br>";
+                                echo $rocky->eat() . " y " . $rocky-> mauyar();
                             ?>
                     </div>
                 </div>
