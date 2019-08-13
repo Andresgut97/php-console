@@ -20,14 +20,29 @@
         <div class="container">
         <?php
             include('person.php');
+            include('automotores/auto.php');
+            include('automatizacion/auto.php');
         ?>
+        <div class="row">
+            <div class="col-12">
+                <div class="p-3 m-2 bg-dark text-white">
+                    <h2>Namespace</h2>
+                    <?php
+                        $auto=new \automotores\auto(4,"Fiat",4);
+                        echo $auto->getauto() . "<br>";
+                        $automat =new \automatizacion\auto("jueves 2 de mayo de 2050",10,"botsocial");
+                        echo $automat->getauto() . "<br>";
+                    ?>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-12">
                 <div class="p-3 m-2 bg-warning text-white">
                     <h2>Incluide</h2>
                     <?php
                         $person = new persona("Max","Tompson");
-                        echo $person->greetings();
+                        echo $person->greetings ();
                     ?>
                 </div>
             </div>
